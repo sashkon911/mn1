@@ -1,0 +1,126 @@
+// Заголовки, загальні БЕМ блоки та інше...
+//====================================================================================================
+.page {
+
+	// .page__main-slider
+
+	&__main-slider {}
+}
+
+//====================================================================================================
+
+.title {
+	font-family: 'Taviraj';
+	font-weight: 500;
+	font-size: rem(36);
+	line-height: 1.11;
+	/* 40/36 */
+	letter-spacing: 0.02em;
+	color: #333333;
+
+	&::after {
+		content: "";
+		display: block;
+		width: em(128, 36);
+		height: rem(1);
+		background-color: #000000;
+		margin-top: rem(8);
+	}
+
+	&_smoll {
+		&::after {
+			content: "";
+			width: em(65, 36);
+		}
+	}
+
+	&_wite {
+		color: #fff;
+		font-size: rem(24);
+
+		&::after {
+			content: "";
+			background-color: #fff;
+			margin-top: em(10, 24);
+		}
+	}
+}
+
+//========================================================================================================
+.label-footer {
+	font-family: 'Taviraj';
+	font-weight: 500;
+	font-size: rem(20);
+	line-height: math.div(28, 20);
+	letter-spacing: 0.02em;
+
+	&:not(:last-child) {
+		margin-bottom: rem(5);
+	}
+
+}
+
+//========================================================================================================
+.search-form {
+
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: em(30, 36);
+		}
+	}
+
+	// .search-form__body
+
+	&__body {
+		display: flex;
+		gap: rem(20);
+
+		@media (max-width: em(460)) {
+			flex-direction: column;
+		}
+	}
+
+	// .search-form__input
+
+	&__line {
+		flex: 1 1 auto;
+
+		.form__error {
+			color: red;
+			margin-top: rem(5);
+		}
+	}
+
+	&__input {
+		font-size: rem(20);
+		height: rem(50);
+
+	}
+}
+
+.social {
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(25);
+	font-size: rem(32);
+
+
+	// .social__item
+
+	&__item {
+		@media (any-hover: hover) {
+			&:hover {
+				transition: opacity 0.3s ease 0s;
+				opacity: 0.7;
+			}
+		}
+	}
+}
+
+//========================================================================================================================================================
+
+.text {
+	line-height: math.div(22, 16);
+	letter-spacing: 0.03em;
+	
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__main-slider main-slider">
+				<div class="main-slider__container">
+					<!-- Оболонка слайдера -->
+					<div class="main-slider__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="main-slider__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="main-slider__slide slide-main-slider swiper-slide">
+								<div class="slide-main-slider__img-ibg_contain">
+									<img src="@img/main/slider/image.png" alt="image">
+								</div>
+								<div class="slide-main-slider__body">
+									<h2 class="slide-main-slider__title">
+										WAY KAMBAS MINI EBONY
+									</h2>
+									<div class="slide-main-slider__text text">
+										MATOA Way Kambas - This wood is chosen to represent the
+										Sumatran Rhino's skin which is designed with an overlap effect on its strap to
+										represent
+										Rhino's skin.
+									</div>
+									<a href="#" class="slide-main-slider__more">Discover</a>
+									<div class="slide-main-slider__action">
+										<button type="button" class="slide-main-slider__button button button_cart"><span
+												class="_icon-basketPlus"> Add to cart</span></button>
+										<a href="#" class="slide-main-slider__button button-cicil">
+											<img src="@img/icons/cicil.png" alt="image">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-slider__slide slide-main-slider swiper-slide">
+								<div class="slide-main-slider__img-ibg_contain">
+									<img src="@img/main/slider/image.png" alt="image">
+								</div>
+								<div class="slide-main-slider__body">
+									<h2 class="slide-main-slider__title">
+										WAY KAMBAS MINI EBONY
+									</h2>
+									<div class="slide-main-slider__text text">
+										MATOA Way Kambas - This wood is chosen to represent the
+										Sumatran Rhino's skin which is designed with an overlap effect on its strap to
+										represent
+										Rhino's skin.
+									</div>
+									<a href="#" class="slide-main-slider__more">Discover</a>
+									<div class="slide-main-slider__action">
+										<button type="button" class="slide-main-slider__button button button_cart"><span
+												class="_icon-basketPlus"> Add to cart</span></button>
+										<a href="#" class="slide-main-slider__button button-cicil">
+											<img src="@img/icons/cicil.png" alt="image">
+										</a>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+						<div class="main-slider__arrows">
+							<button type="button" class="main-slider__arrow swiper-button-prev _icon-leftArrow"></button>
+							<button type="button" class="main-slider__arrow swiper-button-next _icon-rightArrow"></button>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

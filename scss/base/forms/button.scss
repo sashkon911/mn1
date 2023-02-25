@@ -1,0 +1,108 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+
+.button {
+	justify-content: center;
+	align-items: center;
+	font-family: 'Taviraj';
+	font-weight: 500;
+	font-size: rem(20);
+	line-height: 1.6;
+	/* 32/2 */
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	transition: background-color 0.3s ease 0s;
+	background-color: #D84727;
+	display: inline-flex;
+	padding: rem(15) rem(35) rem(14) rem(35);
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #d35c41;
+		}
+	}
+
+	&._fw {
+		width: 100%;
+	}
+
+	&_h68 {
+		padding: rem(18) rem(35) rem(18) rem(35);
+	}
+
+	&_h39 {
+		font-weight: 400;
+		font-size: rem(16);
+		line-height: 1.5;
+		/* 24/16 */
+		padding: rem(8) rem(36) rem(7) rem(36);
+	}
+
+	&_ff6 {
+		font-weight: 600;
+		font-size: rem(24);
+		line-height: 1.0;
+		/* 24/24 */
+		padding: rem(22) rem(35) rem(22) rem(35);
+	}
+
+	&_cart {
+		font-weight: 400;
+		letter-spacing: 0.02em;
+		line-height: math.div(34, 20);
+		/* 34/20 */
+		padding: rem(14) rem(30);
+
+		span {
+			display: flex;
+			align-items: center;
+			gap: rem(18.5);
+
+			&::after {
+				width: rem(21.3);
+				flex: 0 0 rem(21.3);
+			}
+		}
+	}
+}
+
+.button-cicil {
+	justify-content: center;
+	align-items: center;
+	display: inline-flex;
+	font-family: 'Taviraj';
+	font-size: ren(16);
+	line-height: 1.68;
+	/* 27/16 */
+	letter-spacing: 0.02em;
+	color: #D84727;
+	border: 2px solid #D84727;
+	padding: rem(13) rem(41) rem(12) rem(41);
+
+	&:hover {
+		background-color: #fab4a6;
+	}
+
+	&_h58 {
+		padding: rem(13) rem(47) rem(14) rem(47);
+	}
+
+	&_h66 {
+		border: 1px solid #D84727;
+		font-size: ren(20);
+		line-height: 1.7;
+		/* 34/20 */
+		letter-spacing: 0.03em;
+		padding: rem(18) rem(91);
+	}
+
+	&_h61 {
+		font-weight: 500;
+		font-size: rem(20);
+		line-height: 1.6;
+		/* 32/20 */
+		letter-spacing: 0.03em;
+		border: 1px solid #D84727;
+		padding: rem(14) rem(28) rem(13s) rem(27);
+	}
+}
